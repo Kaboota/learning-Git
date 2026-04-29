@@ -14,3 +14,25 @@ A commit is a snapshot of changes in your project at a specific point in time.
 4. What is a branch?
 
 A branch is a separate line of development that allows you to work on features without affecting the main code.
+
+##🔹 Intermediate Questions (with Answers)
+6. What is a pull request (PR)?
+
+A pull request is a way to propose changes to a repository. Team members review the code before merging it into the main branch.
+
+7. Merge vs Rebase?
+Merge: Combines histories and creates a merge commit.
+Rebase: Rewrites commit history to make it linear.
+
+👉 Use rebase for cleaner history, merge for preserving history.
+
+ Your branch is behind main. What do you do?
+git pull origin main
+
+OR (better)
+
+git fetch
+git rebase origin/main
+19. How do you revert a pushed commit?
+git revert <commit-id>
+git push
